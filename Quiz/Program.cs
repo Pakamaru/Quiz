@@ -29,7 +29,7 @@ namespace Quiz
 
             foreach(IQuestion q in ActualQuestions)
             {
-                Console.WriteLine(q.Question);
+                Console.WriteLine(q);
                 if (q.CheckAnswer(Console.ReadLine()))
                     Console.WriteLine("This is the right answer!");
                 else
@@ -44,6 +44,7 @@ namespace Quiz
             questions.Add(new OpenQuestion("Uit hoeveel delen bestaat Lord of the Rings", "3", "films", 2));
             questions.Add(new OpenQuestion("Wat is de hoofdstad van Oostenrijk", "wenen", "geografie", 2));
             questions.Add(new OpenQuestion("Wat is de hoofdstad van Guyana", "georgetown", "geografie", 3));
+            questions.Add(new MultipleChoiceQuestion("In welk land wonen de meeste mensen", "china", "india", "rusland", "indonesië", "geografie", 3));
         }
     }
 }

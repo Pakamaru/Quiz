@@ -23,5 +23,10 @@ namespace Quiz
             if (givenAnswer == Answer) return true;
             else return false;
         }
+
+        public override string ToString()
+        {
+            return Question;
+        }
     }
 }
